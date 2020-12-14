@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  padding: 20px 0px;
+  z-index: 99999;
+  transition: all 0.3s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sticky-nv {
+  position: sticky;
+  top: 0;
+  padding: 10px 0px;
+  background: linear-gradient(-40deg, #de3491, #803891);
+}
+.navbar > * {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.nv-brand {
+  flex: 1;
+  color: white;
+}
+.nv-brand > h3 {
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nv-brand h3 span {
+  font-weight: bolder;
+}
+/* -------------------------------- */
+
+.nv-items {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.nv-items > h4 {
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.616);
+  font-weight: initial;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nv-items > h4:hover {
+  color: white;
+}
+
+.nv-items button {
+  padding: 8px 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+}
+.nv-items button:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,71 @@
+.download {
+  background: linear-gradient(-20deg, #de3491, #803891);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+.download .mob-icon {
+  font-size: 60px;
+  margin-top: 20px;
+  background: linear-gradient(20deg, #de349250, #81389142);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.315);
+}
+
+.download h1 {
+  margin: 30px 0px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 55px;
+}
+
+.download p {
+  margin: auto;
+  font-weight: 100;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.675);
+  width: 50%;
+}
+.download .platform {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: center;
+}
+.download .platform button > * {
+  margin: 0px 15px;
+}
+
+.download .platform button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  background-color: white;
+  font-weight: 500;
+  font-size: 15px;
+  color: #803891;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.411);
+}
+
+.download .platform button:hover {
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+.download span {
+  color: rgba(255, 255, 255, 0.562);
+  margin-bottom: 10px;
+  font-size: 13px;
+}
