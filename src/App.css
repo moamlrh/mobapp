@@ -2,6 +2,20 @@
   padding: 0;
   margin: 0;
 }
+*::-webkit-scrollbar {
+  width: thin;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #813891d2 #de3491;
+  scrollbar-width: thin;
+}
 
 .company-icons img {
   text-align: center;
@@ -9,9 +23,11 @@
   width: 100%;
 }
 
-
 /* init */
 
-.swiper-scrollbar{
+.swiper-scrollbar {
   height: 0 !important;
+}
+
+@media all and (max-width: 850px) {
 }

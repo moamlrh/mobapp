@@ -2,7 +2,7 @@
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .pricing .title span {
   color: grey;
@@ -70,4 +70,34 @@
 .cart button:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   background: #da2476;
+}
+
+@media all and (max-width: 850px) {
+  .pricing .title h2 {
+    font-size: 20px;
+    margin-bottom: -30px;
+  }
+  .pricing .carts {
+    flex-direction: column;
+    padding: 0;
+  }
+  .carts .cart {
+    width: 70%;
+    margin: auto;
+  }
+  .cart span {
+    font-size: 12px;
+  }
+  .cart h1 {
+    font-size: 23px;
+  }
+  .cart h4 {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+  }
+  .cart button {
+    font-size: 12px;
+    padding: 10px;
+  }
 }

@@ -23,3 +23,17 @@
   color: rgba(255, 0, 255, 0.801);
   font-size: 13px;
 }
+
+@media all and (max-width: 850px) {
+  .footer {
+    padding: 5px;
+  }
+  .footer h4 {
+  margin-top: 10px;
+  font-size: 10px;
+  }
+  .footer .info span {
+    margin: 5px;
+    font-size: 10px;
+  }
+}

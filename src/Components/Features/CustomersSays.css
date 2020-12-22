@@ -26,18 +26,48 @@
   border-radius: 50%;
 }
 .swiper .text p {
-    font-size: 23px;
-    color: grey;
-    margin-bottom: 20px;
+  font-size: 23px;
+  color: grey;
+  margin-bottom: 20px;
 }
 
 .swiper .text h4 {
-    font-size: 24px;
-    color: #4f1988;
-    font-weight: 600;
+  font-size: 24px;
+  color: #4f1988;
+  font-weight: 600;
 }
 .swiper .text span {
+  font-size: 18px;
+  color: #e00c81b9;
+  font-weight: 500;
+}
+
+@media all and (max-width: 850px) {
+  .customers .header h2 {
+    font-size: 25px;
+  }
+  .customers .header span {
+    font-size: 15px;
+  }
+  .customers .header span {
+    font-size: 13px;
+  }
+  .customers .header h2 {
+    font-size: 20px;
+  }
+  .swiper {
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+  .swiper .logo img {
+    width: 70px;
+  }
+
+  .swiper .text p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .swiper .text h4 {
     font-size: 18px;
-    color:#e00c81b9;
-    font-weight: 500;
+  }
 }

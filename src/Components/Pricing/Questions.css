@@ -1,38 +1,62 @@
-.questions{
-    border-top: 1px solid rgba(204, 0, 211, 0.075);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.questions {
+  border-top: 1px solid rgba(204, 0, 211, 0.075);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .qs-header {
-    text-align: center;
-    margin: 100px 0px;
-    margin-bottom: 10px;
+  text-align: center;
+  margin: 100px 0px;
+  margin-bottom: 10px;
 }
 .qs-header span {
-    color: grey;
+  color: grey;
 }
 .qs-header h1 {
-    color: #4f1988;
+  color: #4f1988;
 }
-.q-parts{
-    display: flex;
-    padding: 10px;
+.q-parts {
+  display: flex;
+  padding: 10px;
 }
 
-.left-ques{
-    padding: 20px;
+.left-ques {
+  padding: 20px;
 }
 
 .left-q1 {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
-.left-q1  h2{
-    color: #4f1988;
-    font-weight: 600;
-    margin: 10px 0px;
+.left-q1 h2 {
+  color: #4f1988;
+  font-weight: 600;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+.left-q1 p {
+  color: grey;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+@media all and (max-width: 850px) {
+  .questions {
+    margin-bottom: 50px;
+  }
+  .qs-header h1 {
     font-size: 20px;
-}
-.left-q1  p{
-    color: grey;
+  }
+  .left-ques {
+    padding: 0;
+  }
+  .q-parts {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+  .left-q1 h2 {
     font-size: 16px;
-    font-weight: 200;
+  }
+  .left-q1 p {
+    font-size: 13px;
+  }
 }

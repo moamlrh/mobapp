@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Gallary.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Pagination } from "swiper";
@@ -8,7 +8,7 @@ import screen2 from "../../assest/image/screen2.jpg";
 import screen3 from "../../assest/image/screen3.jpg";
 import { Container } from "@material-ui/core";
 
-SwiperCore.use([Autoplay,Pagination]);
+SwiperCore.use([Autoplay, Pagination]);
 const screenShotsSldide = [
   { image: screen1 },
   { image: screen2 },
@@ -17,6 +17,7 @@ const screenShotsSldide = [
   { image: screen3 },
 ];
 const Gallary = () => {
+  const [width] = useState(window.innerWidth);
   return (
     <div className="gallery">
       <Container>
@@ -26,13 +27,13 @@ const Gallary = () => {
         </div>
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView={width > 850 ? 3 : 2}
           autoplay={{
             delay: 3000,
           }}
           pagination={{
-              clickable:true,
-              type:'bullets'
+            clickable: true,
+            type: "bullets",
           }}
           loop={true}
           centeredSlides={true}

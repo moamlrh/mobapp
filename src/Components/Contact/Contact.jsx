@@ -1,3 +1,4 @@
+import { Container } from "@material-ui/core";
 import {
   EmailOutlined,
   Facebook,
@@ -11,29 +12,31 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <div className="con-left">
-        <h3>
-          <LocationOn />
-          1485 Pacific St, Brooklyn, NY 11216 USA
-        </h3>
-        <div className="emil-num">
+    <Container>
+      <div className="contact">
+        <div className="con-left">
           <h3>
-            <EmailOutlined />
-            support@mobileapp.com
+            <LocationOn />
+            1485 Pacific St, Brooklyn, NY 11216 USA
           </h3>
-          <h3>
-            <HeadsetMicOutlined />
-            518-3636-2800
-          </h3>
+          <div className="emil-num">
+            <h3>
+              <EmailOutlined />
+              support@mobileapp.com
+            </h3>
+            <h3>
+              <HeadsetMicOutlined />
+              518-3636-2800
+            </h3>
+          </div>
+        </div>
+        <div className="con-right">
+          <Facebook />
+          <GitHub />
+          <Twitter />
         </div>
       </div>
-      <div className="con-right">
-        <Facebook />
-        <GitHub />
-        <Twitter />
-      </div>
-    </div>
+    </Container>
   );
 };
 
